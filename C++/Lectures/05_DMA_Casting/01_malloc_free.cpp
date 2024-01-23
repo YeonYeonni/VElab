@@ -2,9 +2,9 @@
 using namespace std;
 int main()
 {
-	// new
+	// malloc
 	void* ptr = malloc(monsters);
 
-	// delete
+	// free
 	free(ptr);
 }
