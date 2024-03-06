@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\Headers">
+      <UniqueIdentifier>{915e7b47-630d-4b10-a304-6ab4a6da496b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Manager">
+      <UniqueIdentifier>{eb43f400-89ab-417e-9bd1-3e18f624baa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Rooms">
+      <UniqueIdentifier>{64262832-cd8c-43f6-88d4-5cab9abd7615}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Rooms\GAME">
+      <UniqueIdentifier>{17e94e62-177b-4915-9914-32c86d48ed32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Inventory">
+      <UniqueIdentifier>{4b228d47-8d78-4067-b81a-23541b605205}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Address">
+      <UniqueIdentifier>{8ccb7f0b-2c8f-4c75-a819-59ab0fd7624b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Numlist">
+      <UniqueIdentifier>{1683eda2-3b36-4099-93d3-e1b3906a614c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="RoomManager.cpp">
+      <Filter>소스 파일\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="AddressManager.cpp">
+      <Filter>소스 파일\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Defines.h">
+      <Filter>소스 파일\Headers</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>소스 파일\Headers</Filter>
+    </ClCompile>
+    <ClCompile Include="End.cpp">
+      <Filter>소스 파일\Rooms\GAME</Filter>
+    </ClCompile>
+    <ClCompile Include="ROOM1.cpp">
+      <Filter>소스 파일\Rooms\GAME</Filter>
+    </ClCompile>
+    <ClCompile Include="ROOM2.cpp">
+      <Filter>소스 파일\Rooms\GAME</Filter>
+    </ClCompile>
+    <ClCompile Include="ROOM3.cpp">
+      <Filter>소스 파일\Rooms\GAME</Filter>
+    </ClCompile>
+    <ClCompile Include="Start.cpp">
+      <Filter>소스 파일\Rooms\GAME</Filter>
+    </ClCompile>
+    <ClCompile Include="ROOM.cpp">
+      <Filter>소스 파일\Rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="Address.cpp">
+      <Filter>소스 파일\Address</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventory.cpp">
+      <Filter>소스 파일\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="numlist.cpp">
+      <Filter>소스 파일\Numlist</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RoomManager.h">
+      <Filter>소스 파일\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="AddressManager.h">
+      <Filter>소스 파일\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>소스 파일\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums.h">
+      <Filter>소스 파일\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="End.h">
+      <Filter>소스 파일\Rooms\GAME</Filter>
+    </ClInclude>
+    <ClInclude Include="ROOM1.h">
+      <Filter>소스 파일\Rooms\GAME</Filter>
+    </ClInclude>
+    <ClInclude Include="ROOM2.h">
+      <Filter>소스 파일\Rooms\GAME</Filter>
+    </ClInclude>
+    <ClInclude Include="ROOM3.h">
+      <Filter>소스 파일\Rooms\GAME</Filter>
+    </ClInclude>
+    <ClInclude Include="Start.h">
+      <Filter>소스 파일\Rooms\GAME</Filter>
+    </ClInclude>
+    <ClInclude Include="ROOM.h">
+      <Filter>소스 파일\Rooms</Filter>
+    </ClInclude>
+    <ClInclude Include="Address.h">
+      <Filter>소스 파일\Address</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventory.h">
+      <Filter>소스 파일\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="numlist.h">
+      <Filter>소스 파일\Numlist</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
