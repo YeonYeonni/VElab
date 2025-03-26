@@ -4,6 +4,7 @@ from vtkmodules.vtkCommonColor import vtkNamedColors
 from vtkmodules.vtkCommonTransforms import vtkTransform
 from vtkmodules.vtkFiltersSources import vtkCubeSource, vtkSphereSource, vtkConeSource, vtkCylinderSource
 from vtkmodules.vtkRenderingCore import vtkActor, vtkPolyDataMapper, vtkRenderWindow, vtkRenderWindowInteractor, vtkRenderer
+import time
 
 def transform(transformation, translate=(0.0, 0.0, 0.0), rotate=(0.0, 0.0, 0.0), scale=(1.0, 1.0, 1.0)):
     transformation.Translate(translate)
@@ -376,8 +377,6 @@ def main(argv):
     renderer.AddActor(rightLowerLegActor)
     renderer.AddActor(rightAnkleActor)
     renderer.AddActor(rightFootActor)
-
-    
     
     renderWindow = vtkRenderWindow()
     renderWindow.AddRenderer(renderer)
@@ -388,6 +387,28 @@ def main(argv):
     style = vtkInteractorStyleTrackballCamera()
     interactor.SetInteractorStyle(style)
     renderWindow.Render()
+    
+    for angle in range(0, 25, 5):
+        leftHipTransform.RotateX(angle)
+        rightHipTransform.RotateX(-angle)
+        renderWindow.Render()
+        time.sleep(0.1)
+        
+    for angle in range(0, 10, 2):
+        leftKneeTransform.RotateX(angle)
+        rightKneeTransform.RotateX(angle)
+        renderWindow.Render()
+        time.sleep(0.1)
+        
+    for angle in range(0, 30, 5):
+        leftShoulderTransform.RotateY(-angle)
+        leftElbowTransform.RotateZ(angle)
+        rightShoulderTransform.RotateY(-angle)
+        rightElbowTransform.RotateZ(angle)
+        
+        renderWindow.Render()
+        time.sleep(0.1)
+    
     interactor.Initialize()
     interactor.Start()
     
